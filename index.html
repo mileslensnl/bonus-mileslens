@@ -60,6 +60,19 @@ ul.lijst li{margin:0 0 10px}
 .klein{font-size:13px;color:var(--grijs)}
 .bronnen ol{padding-left:20px;font-size:14px;color:var(--grijs)}
 .bronnen li{margin:0 0 6px}
+.faq details{border:1px solid var(--lijn);border-radius:12px;background:rgba(23,58,102,.35);margin:0 0 10px}
+.faq summary{cursor:pointer;list-style:none;padding:15px 44px 15px 16px;font-weight:600;position:relative}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";position:absolute;right:16px;top:50%;transform:translateY(-50%);color:var(--goud);font-size:22px;font-weight:400}
+.faq details[open] summary::after{content:"–"}
+.faq .antwoord{padding:0 16px 14px}
+.faq .antwoord p{margin:0 0 12px;font-size:16px}
+.faq .antwoord p:last-child{margin-bottom:0}
+.faq ul.shorts{list-style:none;padding:0;margin:0}
+.faq ul.shorts li{margin:0 0 10px}
+.faq ul.shorts a{display:flex;gap:12px;align-items:center;text-decoration:none;color:var(--wit)}
+.faq ul.shorts img{width:54px;height:96px;object-fit:cover;border-radius:6px;flex:none;background:var(--navy-licht)}
+.faq ul.shorts span{font-size:15px}
 footer{border-top:1px solid var(--lijn);margin-top:30px;padding:20px 0 30px;font-size:13px;color:var(--grijs)}
 .balk{position:fixed;left:0;right:0;bottom:0;background:rgba(10,27,51,.96);border-top:1px solid var(--lijn);padding:12px 16px calc(12px + env(safe-area-inset-bottom));text-align:center}
 .balk .knop{width:100%;max-width:420px;padding:13px 18px}
@@ -150,6 +163,31 @@ footer{border-top:1px solid var(--lijn);margin-top:30px;padding:20px 0 30px;font
     <h2>Aanvragen</h2>
     <a class="knop" href="https://go.mileslens.nl/amex-kaarten" rel="sponsored noopener">Naar de aanvraag bij American Express</a>
     <p class="klein" style="margin-top:12px"><b>Reclame</b> – ik krijg miles als je via mijn link een kaart aanvraagt. Dit is geen financieel advies; kies de kaart die bij je past.</p>
+  </section>
+
+  <section class="faq">
+    <h2>Veelgestelde vragen</h2>
+    <details>
+      <summary>Wat is Flying Blue?</summary>
+      <div class="antwoord">
+        <p>Flying Blue is een spaarprogramma waarmee je Miles spaart, bijvoorbeeld door te vliegen met KLM of te betalen met de Flying Blue-creditcard. Met die Miles boek je reward tickets. <a href="https://www.flyingblue.com/nl?country=NL" target="_blank" rel="noopener">Meer op de website van Flying Blue</a></p>
+        <ul class="shorts">
+          <li><a href="https://www.youtube.com/shorts/RqyhSt_XY6U" target="_blank" rel="noopener"><img src="covers/2026-11-24-miles-verlopen.jpg" alt="" loading="lazy" width="54" height="96"><span>Wist je dat je Flying Blue-Miles kunnen verlopen?</span></a></li>
+        </ul>
+      </div>
+    </details>
+    <details>
+      <summary>Wat kan ik met de Gold Card?</summary>
+      <div class="antwoord">
+        <p>Met de Gold Card spaar je 1 Mile per € 1. Via een introductie krijg je Miles als welkomstbonus. De volledige voorwaarden staan hierboven.</p>
+      </div>
+    </details>
+    <details>
+      <summary>Wat kan ik met de Platinum Card?</summary>
+      <div class="antwoord">
+        <p>Met de Platinum Card spaar je 1,5 Miles per € 1. Via een introductie krijg je Miles als welkomstbonus. De volledige voorwaarden staan hierboven.</p>
+      </div>
+    </details>
   </section>
 
   <section class="bronnen">
